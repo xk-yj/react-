@@ -1,0 +1,36 @@
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 70px;
+  height: 35px;
+  background-color: #fa6060;
+  border-radius: 35px;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  span {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 31px;
+    height: 31px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: all 0.3s;
+    content: '';
+  }
+}
+
+.action {
+  background-color: #5dd105;
+}
+
+.disabled1 {
+  background-color: #f6b6b6;
+  cursor: not-allowed;
+}
+
+.disabled2 {
+  background-color: #ccf9a9;
+  cursor: not-allowed;
+}
