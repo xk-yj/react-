@@ -1,0 +1,134 @@
+.input_number {
+  position: relative;
+  display: inline-block;
+  width: 150px;
+  height: 45px;
+  overflow: hidden;
+  border: 1px solid #dee0e4;
+  border-radius: 10px;
+  transition: all 0.3s;
+  user-select: none;
+
+  input {
+    position: absolute;
+    top: 0;
+    left: 30%;
+    width: 40%;
+    height: 100%;
+    text-align: center;
+    border: none;
+    outline-style: none;
+    user-select: none;
+  }
+
+  span {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 100%;
+    background-color: #dee0e4;
+  }
+
+  .minus {
+    top: 0;
+    left: 0;
+    cursor: pointer;
+
+    &::after {
+      width: 10px;
+      height: 2px;
+      background-color: #fff;
+      transition: all 0.3s;
+      content: '';
+    }
+  }
+
+  .add {
+    top: 0;
+    right: 0;
+    cursor: pointer;
+
+    &::after {
+      color: #fff;
+      font-size: 20px;
+      line-height: 20px;
+      transition: all 0.3s;
+      content: '+';
+    }
+  }
+}
+
+.active {
+  border-color: #55ccf0;
+}
+
+.left {
+  .minus {
+    top: 50%;
+    left: 0%;
+    height: 50%;
+  }
+
+  .add {
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    height: 50%;
+    border-bottom: 1px solid #c6c8ce;
+  }
+
+  .input {
+    left: 30%;
+    width: 70%;
+  }
+}
+
+.rigth {
+  .minus {
+    top: 50%;
+    left: 70%;
+    height: 50%;
+  }
+
+  .add {
+    top: 0;
+    left: 70%;
+    box-sizing: border-box;
+    height: 50%;
+    border-bottom: 1px solid #c6c8ce;
+  }
+
+  .input {
+    left: 0%;
+    width: 66%;
+  }
+}
+
+.disabled {
+  background-color: #e8ebf0;
+  .input,
+  .add,
+  .minus {
+    cursor: not-allowed;
+  }
+}
+
+.defaule {
+  &:hover {
+    border: 1px solid #55ccf0;
+  }
+
+  .minus {
+    &:hover::after {
+      background-color: #55ccf0;
+    }
+  }
+
+  .add {
+    &:hover::after {
+      color: #55ccf0;
+    }
+  }
+}
