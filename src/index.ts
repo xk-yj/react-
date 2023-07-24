@@ -1,4 +1,7 @@
 export { default as Button } from './Button';
 export { default as Link } from './Link';
 export { default as Radio } from './Switch';
-export { default as InputNumder } from './Switch';
+export { default as InputNumder } from './InputNumber';
+export { default as MessageBox } from './MessageBox';
+export { default as Input } from './Input';
+export { default as Pagination } from './Pagination';

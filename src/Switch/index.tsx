@@ -11,7 +11,7 @@ type Props = {
 export default function ({ handleClick, width, height, disabled, value = false }: Props) {
   let [flag, setFlag] = useState(value);
   let [left, setLeft] = useState(0);
-  const switchRef = useRef(null);
+  const switchRef: any = useRef(null);
 
   const handle = () => {
     if (!disabled) {

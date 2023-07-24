@@ -8,7 +8,7 @@ type Props = {
   children: any;
 };
 
-export default function index({ type, underline = true, disabled, href, children }: Props) {
+export default function ({ type, underline = true, disabled, href, children }: Props) {
   if (
     !type &&
     type !== 'danger' &&

@@ -5,6 +5,7 @@ type props = {
   name: string;
   size?: any;
   path?: string;
+  className?: any;
 };
 console.log(icons);
 
