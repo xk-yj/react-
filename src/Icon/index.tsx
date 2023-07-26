@@ -7,7 +7,6 @@ type props = {
   path?: string;
   className?: any;
 };
-console.log(icons);
 
 export default ({ name, size, path }: props) => {
   let style = {

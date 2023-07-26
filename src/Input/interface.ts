@@ -45,6 +45,14 @@ export interface InputProps {
    * @description 输入时触发事件
    */
   handleChange?: Function;
+  /**
+   * @description 失去焦点触发
+   */
+  handleBlur?: Function;
+  /**
+   * 获取焦点触发
+   */
+  handleFcus?: Function;
 }
 
 export interface InputStyle {

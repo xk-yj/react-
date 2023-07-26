@@ -1,0 +1,29 @@
+.check {
+  position: relative;
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-right: 5px;
+  line-height: 14px;
+  text-align: center;
+  border: 1px solid #b1b3b8;
+  border-radius: 3px;
+
+  input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+}
+
+.checked {
+  background-color: #86e0fb;
+  &::after {
+    color: #fff;
+    font-size: 12px;
+    content: '✓';
+  }
+}
