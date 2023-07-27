@@ -1,44 +1,44 @@
-import React, { useMemo, FC, memo, useEffect, useState, useRef } from 'react';
-import Css from './Card.module.less';
-import { CardProps, CardStyle, NativeCardProps } from './interface';
+import React, { FC, memo } from 'react';
+import Css from './index.module.less';
+import { CardProps } from './interface';
 
-const Card: FC<CardProps & NativeCardProps> = memo((props) => {
-  let { title, extra, bodyStyle, shadow, width, height, border } = props;
-
-  shadow = shadow ? shadow : 'always';
-  title = title ? title : null;
-  extra = extra ? extra : null;
-
-  const cardSize = useMemo(() => {
-    var size: CardStyle = {
+const Card: FC<CardProps> = memo(
+  ({ title, extra, bodyStyle, shadow, width, height, border, children }) => {
+    shadow = shadow ? shadow : 'always';
+    title = title ? title : null;
+    extra = extra ? extra : null;
+    let style: any = {
       width: '300px',
-      border: '1px solid #ccc',
+      border: '1px solid #b1b3b8',
     };
+
     if (width) {
-      size.width = width;
+      style.width = width;
     }
     if (height) {
-      size.height = height;
+      style.height = height;
     }
     if (border) {
-      size.border = border;
+      style.border = border;
     }
-    return size;
-  }, [width, height, border]);
 
-  return (
-    <div className={Css['Card']} style={cardSize as any}>
-      <div className={Css[shadow as any]}>
-        <div className={Css['header']} style={{ opacity: title == null && extra == null ? 0 : 1 }}>
-          <div className={Css['left']}>
-            <p>{title}</p>
+    return (
+      <div className={Css['Card']} style={style as any}>
+        <div className={Css[shadow as any]}>
+          <div
+            className={Css['header']}
+            style={{ opacity: title == null && extra == null ? 0 : 1 }}
+          >
+            <div className={Css['left']}>
+              <p>{title}</p>
+            </div>
+            <div className={Css['right']}>{extra}</div>
           </div>
-          <div className={Css['right']}>{extra}</div>
+          <div style={bodyStyle}>{children}</div>
         </div>
-        <div style={bodyStyle}>{props.children}</div>
       </div>
-    </div>
-  );
-});
+    );
+  },
+);
 
 export default Card;

@@ -9,22 +9,22 @@ group:
 
 # Card 卡片
 
-多选框。
+将信息聚合在卡片容器中展示
 
-#### 何时使用
+### 基本使用
 
-<p>将信息聚合在卡片容器中展示。</p>
+> 包含标题，内容和操作 <code src="./demo/index1.tsx" />
 
-## 基本使用
+### 简单卡片
 
-<code src="./demo/index1.tsx" />
-
-## 简单卡片
+> 卡片可以只有内容区域
 
 <code src="./demo/index2.tsx" />
 
-## 卡片阴影
+### 卡片阴影
 
-<code src='./demo/index3.tsx'/>
+> 通过设置 shadow 显示阴影 <code src='./demo/index3.tsx'/>
+
+### Card 参数说明
 
 <API></API>

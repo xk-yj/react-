@@ -10,10 +10,6 @@ export interface PaginationProps {
    */
   defaultPageSize?: number;
   /**
-   * @description 禁用分页
-   */
-  disabled?: boolean;
-  /**
    * @description 数据总数
    * @default 0
    */
@@ -36,7 +32,3 @@ export interface PaginationProps {
    */
   go?: boolean;
 }
-
-export interface PaginationStyle {}
-
-export type NativePaginationProps = Omit<React.PaginationHTMLAttributes<HTMLElement>, 'type'>;

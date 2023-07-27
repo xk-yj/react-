@@ -1,10 +1,8 @@
-import React, { useMemo, FC, memo, useEffect, useState, useRef } from 'react';
-import Css from './Divider.module.less';
-import { DividerProps, NativeDividerProps } from './interface';
+import React, { FC, memo } from 'react';
+import Css from './index.module.less';
+import { DividerProps } from './interface';
 
-const Divider: FC<DividerProps & NativeDividerProps> = memo((props) => {
-  let { title, direction, contentPosition } = props;
-
+const Divider: FC<DividerProps> = memo(({ title, direction, contentPosition }) => {
   title = title ? title : null;
   direction = direction ? direction : 'horizontal';
   contentPosition = contentPosition ? contentPosition : 'center';
@@ -33,9 +31,9 @@ const Divider: FC<DividerProps & NativeDividerProps> = memo((props) => {
         style={{ display: direction == 'horizontal' ? 'flex' : 'none' }}
         className={Css['horizontal']}
       >
-        <hr align={'center'} width={leftNum + '%'} color={'#ccc'} size={1} />
+        <hr style={{ width: leftNum + '%' }} color={'#b1b3b8'} />
         <p style={{ display: title ? 'block' : 'none' }}>{title}</p>
-        <hr align={'center'} width={rightNum + '%'} color={'#ccc'} size={1} />
+        <hr style={{ width: leftNum + '%' }} color={'#b1b3b8'} />
       </div>
       <div
         style={{ display: direction == 'vertical' ? 'inline-block' : 'none' }}

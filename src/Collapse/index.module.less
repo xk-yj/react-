@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.Collapse {
+  border: 1px solid #dee0e4;
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .Collapse_one {
+    .title {
+      height: 40px;
+      line-height: 40px;
+      background-color: #f5f5f5;
+      border: 1px solid #dee0e4;
+      cursor: pointer;
+    }
+    .content {
+      height: 0;
+      overflow: hidden;
+      transition: all 0.3s;
+    }
+  }
+  .ghost {
+    margin-top: 10px;
+    .title {
+      height: 40px;
+      line-height: 40px;
+      cursor: pointer;
+    }
+    .content {
+      height: 0;
+      overflow: hidden;
+      transition: all 0.3s;
+    }
+  }
+  .small {
+    font-size: 10px;
+    .title {
+      height: 40px;
+      line-height: 40px;
+      background-color: rgba(0, 0, 0, 0.05);
+      border: 1px solid rgba(0, 0, 0, 0.05);
+      cursor: pointer;
+    }
+    .content {
+      height: 0;
+      overflow: hidden;
+      transition: 1s all;
+    }
+  }
+  .large {
+    font-size: 20px;
+    .title {
+      height: 40px;
+      line-height: 40px;
+      background-color: rgba(0, 0, 0, 0.05);
+      border: 1px solid rgba(0, 0, 0, 0.05);
+      cursor: pointer;
+    }
+    .content {
+      height: 0;
+      overflow: hidden;
+      transition: 1s all;
+    }
+  }
+}
+
+.icon {
+  margin-right: 20px;
+  transform: rotate(0deg);
+  transition: all 0.3s;
+}
+
+.action {
+  transform: rotate(90deg);
+}

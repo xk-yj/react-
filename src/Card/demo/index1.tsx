@@ -8,7 +8,7 @@ export default function index1() {
       <Card
         title={'卡片名称'}
         shadow={'hover'}
-        extra={<Button>操作按钮</Button>}
+        extra={<Button type="text">操作按钮</Button>}
         bodyStyle={{ padding: '12px' }}
       >
         <p>列表内容1</p>

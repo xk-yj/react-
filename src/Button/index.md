@@ -47,20 +47,6 @@ group:
 
 <code src="./demo/index6.tsx" />
 
----
+### button 参数说明
 
-### 参数说明
-
-| 参数 | 说明 | 类型 | 可选值 | 默认值 |
-| :-: | :-: | :-: | :-: | :-: |
-| type | 按钮类型 | `string` | `primary` / `danger` / `warning` / `success` / `info` / `text ` | `primary` |
-| width | 宽度 | `string` /`number` | —— | `100px` |
-| height | 高度 | `string` /`number` | —— | `45px` |
-| radius | 圆角 | `string` /`number` | —— | —— |
-| disabled | 是否禁用 | `boolean` | —— | `false` |
-
-### 事件说明
-
-|    参数     |   说明   |    类型    | 可选值 | 默认值 |
-| :---------: | :------: | :--------: | :----: | :----: |
-| handleClick | 点击事件 | `funtcion` |   ——   |   ——   |
+<API />

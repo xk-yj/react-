@@ -27,11 +27,6 @@ group:
 
 > 设置 underline 选择是否显示下划线 <code src="./demo/index3.tsx" />
 
-### 参数说明
+### Link 参数说明
 
-| 参数 | 说明 | 类型 | 可选值 | 默认值 |
-| :-: | :-: | :-: | :-: | :-: |
-| type | 链接类型 | `string` | primary` /`danger`/ `warning`/ `success`/`info`/ `text primary | `primary` |
-| underline | 设置下划线 | `boolean` | —— | `true` |
-| disabled | 是否禁用 | `boolean` | —— | `false` |
-| _href_ | 链接跳转地址 | `string` | —— | `/` |
+<API />

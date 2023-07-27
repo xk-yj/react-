@@ -24,6 +24,7 @@ const Tabs: FC<TabsProps> = memo(({ type, className, value, handleClick, childre
         tabs_main.current.childNodes[index].className = Css['tab_pane'];
       }
     });
+    return handleClick ? handleClick(e, value) : null;
   };
 
   useEffect(() => {
@@ -39,7 +40,13 @@ const Tabs: FC<TabsProps> = memo(({ type, className, value, handleClick, childre
   }, []);
 
   return (
-    <div className={[Css['tabs'], type === 'border_card' ? Css['border'] : ''].join(' ')}>
+    <div
+      className={[
+        Css['tabs'],
+        type === 'border_card' ? Css['border'] : '',
+        className ? className : '',
+      ].join(' ')}
+    >
       <div className={[Css['navs'], Css[type]].join(' ')} ref={navs}>
         {children.map((item: any, index: any) => {
           if (item.props.name) {

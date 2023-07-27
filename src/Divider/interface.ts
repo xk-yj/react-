@@ -14,5 +14,3 @@ export interface DividerProps {
    */
   contentPosition?: String;
 }
-
-export type NativeDividerProps = Omit<React.HTMLAttributes<HTMLElement>, ''>;

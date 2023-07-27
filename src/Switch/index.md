@@ -1,5 +1,5 @@
 ---
-title: Switch单选框
+title: Switch 开关
 nav:
   title: 通用
   path: /component
@@ -7,7 +7,7 @@ group:
   path: /component
 ---
 
-# Switch 单选框
+# Switch 开关
 
 > 常用的开关组件
 
@@ -33,17 +33,6 @@ group:
 
 > 通过 handleClick 设置自定义事件 <code src="./demo/index4.tsx" />
 
-### 参数说明
+### Switch 参数说明
 
-|   参数   |       说明       |        类型         | 可选值 | 默认值  |
-| :------: | :--------------: | :-----------------: | :----: | :-----: |
-|  value   |   设置开关状态   |      `boolean`      |   ——   | `false` |
-|  width   |     设置宽度     | `string` / `number` |   ——   | `70px`  |
-|  height  |     设置高度     | `string` / `number` |   ——   | `35px`  |
-| disabled | 控制开关是否禁用 |      `boolean`      |   ——   | `false` |
-
-### 事件说明
-
-|    参数     |     说明     |    类型    | 可选值 | 默认值 |
-| :---------: | :----------: | :--------: | :----: | :----: |
-| handleClick | 点击开关事件 | `funticon` |   ——   |   ——   |
+<API>

@@ -1,40 +1,32 @@
 export interface AvatarProps {
   /**
-   * @description 内容
-   * @default string
-   */
-  children?: String;
-  /**
    * @description 圆形显示
    * @default fasle
    */
-  circle?: Boolean;
+  circle?: boolean;
   /**
-   * @description 头像尺寸
-   * @default 'md'
+   * @description 头像尺寸 可选值 lg / md / sm / xs
+   * @default md
    */
   size?: any;
   /**
    * @description img元素的sizes属性
    * @default string
    */
-  sizes?: String;
+  sizes?: string;
   /**
    * @description 设置图片地址
    * @default string
    */
-  src?: String;
+  src?: string;
   /**
    * @description 图片加载失败的提示信息
    * @default string
    */
-  alt?: String;
+  alt?: string;
+  /**
+   * @description 自定义样式
+   */
+  style?: Object;
+  children?: string;
 }
-export interface AvatarStyle {
-  width?: String;
-  height?: String;
-  circle?: String;
-  size?: any;
-}
-
-export type NativeAvatarProps = Omit<React.AllHTMLAttributes<HTMLElement>, 'size'>;

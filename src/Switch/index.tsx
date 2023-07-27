@@ -1,16 +1,10 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState, FC, memo } from 'react';
 import Css from './index.module.less';
-type Props = {
-  handleClick?: Function;
-  width?: any;
-  height?: any;
-  disabled?: boolean;
-  value?: boolean;
-};
+import { SwitchProps } from './interface';
 
-export default function ({ handleClick, width, height, disabled, value = false }: Props) {
+const Switch: FC<SwitchProps> = memo(({ width, height, disabled, value = false, handleClick }) => {
   let [flag, setFlag] = useState(value);
-  let [left, setLeft] = useState(0);
+  let [left, setLeft]: any = useState(0);
   const switchRef: any = useRef(null);
 
   const handle = () => {
@@ -82,4 +76,6 @@ export default function ({ handleClick, width, height, disabled, value = false }
       ></span>
     </div>
   );
-}
+});
+
+export default Switch;

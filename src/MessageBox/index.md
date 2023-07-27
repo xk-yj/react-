@@ -35,11 +35,6 @@ group:
 
 <code src="./demo/index4.tsx" />
 
-### 参数说明
+### MessageBox 参数说明
 
-| 参数 | 说明 | 类型 | 可选值 | 默认值 |
-| :-: | :-: | :-: | :-: | :-: |
-| type | 链接类型 | `string` | primary` /`danger`/ `warning`/ `success`/`info`/ `text primary | `primary` |
-| underline | 设置下划线 | `boolean` | —— | `true` |
-| disabled | 是否禁用 | `boolean` | —— | `false` |
-| href | 链接跳转地址 | `string` | —— | `/` |
+<API />

@@ -23,7 +23,3 @@ export interface BacktopProps {
   className?: string;
   children?: any;
 }
-
-export interface BacktopStyle {}
-
-export type NativeBacktopProps = Omit<React.HTMLAttributes<HTMLElement>, 'type'>;

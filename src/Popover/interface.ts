@@ -23,5 +23,3 @@ export interface PopoverProps {
   placement?: string;
   children?: any;
 }
-
-export type NativePopoverProps = Omit<React.PopoverHTMLAttributes<HTMLElement>, 'type'>;

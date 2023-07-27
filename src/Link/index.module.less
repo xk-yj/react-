@@ -5,17 +5,13 @@
     color: black;
     text-decoration: none;
   }
-  .underline {
-    &:hover {
-      text-decoration: underline;
-    }
-  }
 
   .danger {
     color: #fa6060;
 
     &:hover {
       color: #f59b9b;
+      text-decoration: none;
     }
 
     &.disabled {
@@ -29,6 +25,7 @@
 
     &:hover {
       color: #f8e74b;
+      text-decoration: none;
     }
 
     &.disabled {
@@ -42,6 +39,7 @@
 
     &:hover {
       color: #9be4fa;
+      text-decoration: none;
     }
 
     &.disabled {
@@ -55,6 +53,7 @@
 
     &:hover {
       color: #9be4fa;
+      text-decoration: none;
     }
 
     &.disabled {
@@ -68,6 +67,7 @@
 
     &:hover {
       color: #b9babe;
+      text-decoration: none;
     }
 
     &.disabled {
@@ -81,11 +81,17 @@
 
     &:hover {
       color: #63df03;
+      text-decoration: none;
     }
 
     &.disabled {
       color: #ccf9a9;
       cursor: not-allowed;
+    }
+  }
+  .underline {
+    &:hover {
+      text-decoration: underline;
     }
   }
 }

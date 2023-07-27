@@ -22,8 +22,5 @@ export interface CheckboxProps {
    * @description 变化时的回调函数
    */
   onChange?: Function;
+  children?: any;
 }
-
-export interface CheckboxStyle {}
-
-export type NativeCheckboxProps = Omit<React.CheckboxHTMLAttributes<HTMLElement>, 'type'>;

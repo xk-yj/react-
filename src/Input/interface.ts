@@ -26,7 +26,7 @@ export interface InputProps {
   /**
    * @description 输入框内容
    */
-  value?: String;
+  value?: string;
   /**
    * @description 是否禁用
    * @default false
@@ -54,11 +54,3 @@ export interface InputProps {
    */
   handleFcus?: Function;
 }
-
-export interface InputStyle {
-  border?: String;
-  outlineColor?: String;
-  outlineStyle?: String;
-}
-
-export type NativeInputProps = Omit<React.InputHTMLAttributes<HTMLElement>, 'type'>;

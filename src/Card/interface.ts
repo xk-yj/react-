@@ -12,28 +12,21 @@ export interface CardProps {
    */
   bodyStyle?: any;
   /**
-   * @description 阴影
-   * @default always/hover/never
+   * @description 阴影 可选值 always/hover/never
+   * @default always
    */
-  shadow?: String;
+  shadow?: string;
   /**
    * @description 宽度
    */
-  width?: String;
+  width?: string;
   /**
    * @description 高度
    */
-  height?: String;
+  height?: string;
   /**
    * @description 边框
    */
-  border?: String;
+  border?: string;
+  children?: any;
 }
-
-export interface CardStyle {
-  width?: String;
-  height?: String;
-  border?: String;
-}
-
-export type NativeCardProps = Omit<React.HTMLAttributes<HTMLElement>, ''>;

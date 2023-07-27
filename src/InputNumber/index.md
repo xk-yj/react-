@@ -41,22 +41,6 @@ group:
 
 <code src="./demo/index4.tsx" />
 
-### 参数说明
+### InputNumber 参数说明
 
-| 参数 | 说明 | 类型 | 可选值 | 默认值 |
-| :-: | :-: | :-: | :-: | :-: |
-| value | 初始值 | `number` | —— | `0` |
-| min | 最小值 | `number` | —— | `0` |
-| max | 最大值 | `number` | —— | `99999999` |
-| width | 设置宽 | `string` / `number` | —— | `150px` |
-| height | 设置高 | `string` / `number` | —— | `45px` |
-| disabled | 控制是否禁用 | `boolean` | —— | `false` |
-| controlsPosition | 控制组件按钮位置 | `string` | `left` / `rigth` / `center` | `center` |
-
-### 事件说明
-
-|  参数  |         说明         |    类型    | 可选值 | 默认值 |
-| :----: | :------------------: | :--------: | :----: | :----: |
-| change |    当值改变时触发    | `Function` |   ——   |   ——   |
-| focus  | 输入框获取焦点时触发 | `Function` |   ——   |   ——   |
-|  blur  | 输入框失去焦点时触发 | `Function` |   ——   |   ——   |
+<API />

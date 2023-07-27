@@ -29,6 +29,6 @@ group:
 
 <code src="./demo/index3.tsx" />
 
-### 参数说明
+### Popover 参数说明
 
 <API src="./index.tsx" />

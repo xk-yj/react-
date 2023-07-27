@@ -1,7 +1,7 @@
 import React, { useMemo, FC, memo } from 'react';
-import Css from './input.module.less';
-import { InputProps, InputStyle, NativeInputProps } from './interface';
-const Input: FC<InputProps & NativeInputProps> = memo(
+import Css from './index.module.less';
+import { InputProps } from './interface';
+const Input: FC<InputProps> = memo(
   ({
     type,
     width,
@@ -54,12 +54,12 @@ const Input: FC<InputProps & NativeInputProps> = memo(
           disabled={disabled}
           className={className}
           style={style}
-          value={value}
+          value={value ? value : ''}
           onChange={(e) => (handleChange ? handleChange({ value: e.currentTarget.value }) : null)}
-          onBlur={() => {
+          onBlur={(e) => {
             handleBlur ? handleBlur({ value: e.currentTarget.value }) : null;
           }}
-          onFocus={() => {
+          onFocus={(e) => {
             handleFcus ? handleFcus({ value: e.currentTarget.value }) : null;
           }}
         />

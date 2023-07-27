@@ -1,5 +1,5 @@
 import React, { useMemo, FC, memo, useEffect, useState, useRef } from 'react';
-import Css from '../Checkbox.module.less';
+import Css from '../index.module.less';
 import { CheckboxGroupProps } from './interface';
 
 const CheckboxGroup: FC<CheckboxGroupProps> = memo(({ disabled, options, onChange }) => {

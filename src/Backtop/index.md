@@ -7,7 +7,7 @@ group:
   path: /component
 ---
 
-# Icon 图标
+# Backtop 返回顶部
 
 > 返回页面顶部的操作按钮
 
@@ -17,12 +17,12 @@ group:
 
 <code src="./demo/index1.tsx" />
 
-### 基础用法
+### 显示位置
 
 > 显示区域被固定为 40px \* 40px 的区域, 其中的内容可支持自定义。
 
 <code src="./demo/index2.tsx" />
 
-### 参数说明
+### Backtop 参数说明
 
 <API></API>

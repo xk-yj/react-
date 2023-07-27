@@ -1,5 +1,4 @@
 import React from 'react';
-import '../Avatar.module.less';
 import Avatar from '..';
 
 export default function AvatarDemo3() {

@@ -9,22 +9,20 @@ group:
 
 # Divider 分割线
 
-多选框。
+区隔内容的分割线。
 
-#### 何时使用
+### 基本使用
 
-<p>区隔内容的分割线。</p>
+> 对不同章节的文本段落进行分割 <code src="./demo/index1.tsx" />
 
-## 基本使用
+### 设置方案
 
-<code src="./demo/index1.tsx" />
+> 可以在分割线上自定义文案内容 <code src="./demo/index2.tsx" />
 
-## 设置方案
+### 垂直分割
 
-<code src="./demo/index2.tsx" />
+> 垂直分割段落 <code src='./demo/index3.tsx'/>
 
-## 垂直分割
-
-<code src='./demo/index3.tsx'/>
+### Divider 参数说明
 
 <API></API>

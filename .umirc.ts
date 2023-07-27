@@ -31,10 +31,12 @@ export default defineConfig({
     {
       title: '指南',
       path: '/guide',
+      key: 1,
     },
     {
       title: '组件',
       path: '/component',
+      key: 2,
     },
     {
       title: '作者',
@@ -48,6 +50,7 @@ export default defineConfig({
           path: '',
         },
       ],
+      key: 3,
     },
     {
       title: 'GitHub',

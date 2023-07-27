@@ -1,14 +1,7 @@
-import React from 'react';
+import React, { FC, memo } from 'react';
 import Css from './index.module.less';
-type Props = {
-  type?: string;
-  underline?: boolean;
-  disabled?: boolean;
-  href?: string;
-  children: any;
-};
-
-export default function ({ type, underline = true, disabled, href, children }: Props) {
+import { LinkProps } from './interface';
+const Link: FC<LinkProps> = memo(({ type, underline = true, disabled, href, children }) => {
   if (
     !type &&
     type !== 'danger' &&
@@ -38,4 +31,6 @@ export default function ({ type, underline = true, disabled, href, children }: P
       </a>
     </div>
   );
-}
+});
+
+export default Link;
