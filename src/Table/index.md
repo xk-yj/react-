@@ -1,10 +1,10 @@
 ---
 title: Table 表格
 nav:
-  title: 通用
+  title: Data 数据展示
   path: /component
 group:
-  path: /component
+  path: /data
 ---
 
 # Table 表格

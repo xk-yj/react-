@@ -1,0 +1,33 @@
+.headleft {
+  position: relative;
+  display: flex;
+  margin-right: 40px;
+  cursor: pointer;
+}
+.headcontent {
+  color: #303133;
+  font-size: 18px;
+}
+.headtitle {
+  margin-left: 5px;
+  font-weight: 500;
+  font-size: 14px;
+}
+.headtitle::after {
+  position: absolute;
+  top: 50%;
+  right: -20px;
+  width: 1px;
+  height: 16px;
+  background-color: #dcdfe6;
+  transform: translateY(-50%);
+  content: '';
+}
+.header {
+  display: flex;
+  line-height: 24px;
+}
+.title {
+  display: flex;
+  align-items: center;
+}

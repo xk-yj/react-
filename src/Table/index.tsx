@@ -29,6 +29,7 @@ const Table: FC<TableProps> = memo(({ dataSource, columns, stripe, border }) => 
                         rowSpan={item.rowSpanName == el.key ? item.rowSpan : 1}
                         colSpan={item.colSpanName == el.key ? item.colSpan : 1}
                         style={{ width: el.width, height: item['height'] }}
+                        className={Css['td']}
                       >
                         {item[el.key]}
                       </td>

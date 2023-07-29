@@ -3,7 +3,7 @@ import Loading from '..';
 
 export default function AvatarDemo() {
   return (
-    <div>
+    <div style={{ height: '150px' }}>
       <Loading size="sm" text="" />
     </div>
   );

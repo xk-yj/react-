@@ -1,10 +1,10 @@
 ---
 title: Divider 分割线
 nav:
-  title: 通用
+  title: Others 其他
   path: /component
 group:
-  path: /component
+  path: /others
 ---
 
 # Divider 分割线

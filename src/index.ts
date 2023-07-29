@@ -4,7 +4,7 @@ export { default as Radio } from './Switch';
 export { default as InputNumder } from './InputNumber';
 export { default as MessageBox } from './MessageBox';
 export { default as Input } from './Input';
-export { default as Tabs } from './Tabs';
+export { default as Tabs } from './Tabs/Tabs';
 export { default as TabPane } from './Tabs/TabPane';
 export { default as CheckboxAll } from './Checkbox/CheckboxAll';
 export { default as CheckboxGroup } from './Checkbox/CheckboxGroup';

@@ -28,7 +28,7 @@ export default function IconDemo1() {
             }}
           >
             <Icon key={index} name={item} size={20} />
-            <p style={{ fontSize: '12px' }}>{item}</p>
+            <p style={{ fontSize: '12px', userSelect: 'all' }}>{item}</p>
           </div>
         );
       })}

@@ -1,10 +1,10 @@
 ---
 title: InfiniteScroll 无限滚动
 nav:
-  title: 通用
+  title: Data 数据展示
   path: /component
 group:
-  path: /component
+  path: /data
 ---
 
 # InfiniteScroll 无限滚动

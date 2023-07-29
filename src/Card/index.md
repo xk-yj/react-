@@ -1,10 +1,10 @@
 ---
 title: Card 卡片
 nav:
-  title: 通用
+  title: Data 数据展示
   path: /component
 group:
-  path: /component
+  path: /data
 ---
 
 # Card 卡片

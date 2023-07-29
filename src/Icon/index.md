@@ -1,10 +1,10 @@
 ---
 title: Icon 图标
 nav:
-  title: 通用
+  title: Basic 基础组件
   path: /component
 group:
-  path: /component
+  path: /basic
 ---
 
 # Icon 图标

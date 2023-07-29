@@ -1,10 +1,10 @@
 ---
-title: Loading 组件
+title: Loading 加载
 nav:
-  title: 通用
+  title: Feedback 反馈组件
   path: /component
 group:
-  path: /component
+  path: /feedback
 ---
 
 # Loading 加载

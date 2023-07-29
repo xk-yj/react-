@@ -1,10 +1,10 @@
 ---
-title: Pagination 组件
+title: Pagination 分页
 nav:
-  title: 通用
+  title: Data 数据展示
   path: /component
 group:
-  path: /component
+  path: /data
 ---
 
 # Pagination 分页

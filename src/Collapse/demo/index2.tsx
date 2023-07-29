@@ -47,5 +47,5 @@ export default function CollapseDemo1() {
       ),
     },
   ];
-  return <Tree items={item} disabled={true} height={50} onChange={onChange}></Tree>;
+  return <Tree items={item} disabled={true} height={80} onChange={onChange}></Tree>;
 }

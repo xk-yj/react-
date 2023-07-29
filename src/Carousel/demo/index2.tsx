@@ -18,6 +18,7 @@ export default function index1() {
                       display: 'flex',
                       alignItems: 'center',
                       justifyContent: 'center',
+                      margin: '0',
                     }}
                   >
                     {item}
@@ -35,6 +36,7 @@ export default function index1() {
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
+                    margin: '0',
                   }}
                 >
                   {item}

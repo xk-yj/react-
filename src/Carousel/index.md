@@ -1,10 +1,10 @@
 ---
 title: Carousel 走马灯
 nav:
-  title: 通用
+  title: Data 数据展示
   path: /component
 group:
-  path: /component
+  path: /data
 ---
 
 # Carousel 走马灯

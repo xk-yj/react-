@@ -27,9 +27,3 @@ export interface CollapseProps {
    */
   onChange?: Function | undefined;
 }
-export interface CollapseStyle {
-  //button样式接口
-  height?: any;
-  width?: any;
-}
-export type NativeButtonProps = Omit<React.AllHTMLAttributes<HTMLElement>, 'type'>; //原生button接口

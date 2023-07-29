@@ -1,23 +1,38 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 .Breadcrumb {
   display: flex;
+  justify-content: flex-start;
+  width: 100%;
   a {
     color: black;
-    color: #ccc;
+    font-weight: 600;
     text-decoration: none;
     list-style: none;
   }
   a:hover {
-    color: black;
-    background-color: #ccc;
-    border-radius: 5px;
+    color: #409eff;
+    font-weight: 600;
   }
   .nav {
-    color: #ccc;
+    color: black;
+  }
+  .nav_one {
+    margin: 5px 5px;
+    color: black;
+    font-weight: 100;
   }
 }
 .nav:nth-last-child(1) {
-  color: black;
+  color: #303133;
   .nav_one {
     display: none;
   }
+}
+.nav:first-child {
+  color: black;
+  font-weight: 600;
 }

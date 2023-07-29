@@ -1,10 +1,10 @@
 ---
 title: Collapse 折叠面板
 nav:
-  title: 通用
+  title: Data 数据展示
   path: /component
 group:
-  path: /component
+  path: /data
 ---
 
 # Collapse 折叠面板
@@ -27,4 +27,4 @@ group:
  
 ### Collapse 参数说明
 
-<API></API>
+<API src="./index.tsx" />

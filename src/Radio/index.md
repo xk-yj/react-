@@ -1,10 +1,10 @@
 ---
 title: Redio 单选
 nav:
-  title: 通用
+  title: Form 表单组件
   path: /component
 group:
-  path: /component
+  path: /form
 ---
 
 # Redio 单选

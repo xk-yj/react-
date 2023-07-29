@@ -2,7 +2,7 @@ import React, { useState, FC, memo } from 'react';
 import Css from './index.module.less';
 import Icon from '../Icon/index';
 import { MessageBoxProps } from './interface';
-
+import Button from '../Button';
 const MessageBox: FC<MessageBoxProps> = memo(
   ({ messageTitle, messageMain, useHTMLString, handleSubmit, children }) => {
     let [flag, setFlag] = useState(false);
@@ -48,14 +48,12 @@ const MessageBox: FC<MessageBoxProps> = memo(
                 {messageMain ? (useHTMLString ? messageMain : String(messageMain)) : '内容'}
               </div>
               <div className={Css.submit}>
-                <button onClick={() => submit()}>确认</button>
-                <button
-                  onClick={() => {
-                    mshBoxhied();
-                  }}
-                >
+                <Button type="success" handleClick={submit}>
+                  确认
+                </Button>
+                <Button type="danger" handleClick={mshBoxhied}>
                   取消
-                </button>
+                </Button>
               </div>
             </div>
           </div>

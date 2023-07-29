@@ -5,7 +5,6 @@ import Icon from '../../Icon';
 const Carousel: FC<CarouselProps> = memo(
   ({ height, initial_index, trigger, autoplay, interval, loop, change, children }) => {
     let [index, setIndex] = useState(initial_index ? initial_index : 0);
-    let [time, setTime] = useState(0);
     let carouselMainStyle = {
       width: 100 * (loop ? children.length + 1 : children.length) + '%',
       height: height ? height : '200px',
@@ -19,7 +18,7 @@ const Carousel: FC<CarouselProps> = memo(
 
     loop = loop ? loop : true;
 
-    let timer: any;
+    let [timer, setTimer]: any = useState(null);
 
     if (trigger !== 'hover') {
       trigger = 'click';
@@ -27,13 +26,17 @@ const Carousel: FC<CarouselProps> = memo(
 
     useEffect(() => {
       if (autoplay) {
-        timer = setInterval(() => {
+        clearInterval(timer);
+        setTimer(null);
+        let time = setInterval(() => {
           nextClick();
         }, interval);
+        setTimer(time);
       }
       return () => {
         if (autoplay) {
           clearInterval(timer);
+          setTimer(null);
         }
       };
     }, []);
@@ -55,34 +58,41 @@ const Carousel: FC<CarouselProps> = memo(
     };
 
     const nextClick = () => {
-      let num = -parseInt(carouselMain.current.style.left) / 100;
-      if (num < children.length - 1) {
-        carouselMain.current.style.transition = 'all .3s';
-        setIndex((num) => num + 1);
-        change ? change({ index: num }) : '';
-      } else {
-        setIndex((num) => num + 1);
-        setTimeout(() => {
-          carouselMain.current.style.transition = 'none';
-          setIndex(0);
+      if (carouselMain.current) {
+        let num = -parseInt(carouselMain.current.style.left) / 100;
+        if (num < children.length - 1) {
+          carouselMain.current.style.transition = 'all .3s';
+          setIndex((num) => num + 1);
           change ? change({ index: num }) : '';
-        }, 300);
+        } else {
+          setIndex((num) => num + 1);
+          setTimeout(() => {
+            carouselMain.current.style.transition = 'none';
+            setIndex(0);
+            change ? change({ index: num }) : '';
+          }, 300);
+        }
+      } else {
+        clearInterval(timer);
+        timer = null;
       }
     };
 
     const MouseOver = () => {
-      autoplay ? clearInterval(time) : '';
+      autoplay ? clearInterval(timer) : '';
+      setTimer(null);
     };
-
     const MouseOut = () => {
       if (autoplay) {
-        let timer = setInterval(
+        clearInterval(timer);
+        setTimer(null);
+        let time = setInterval(
           () => {
             nextClick();
           },
           interval ? interval : 3000,
         );
-        setTime(timer);
+        setTimer(time);
       }
     };
 

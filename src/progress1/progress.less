@@ -1,0 +1,60 @@
+.progress {
+  display: inline-block;
+  width: 300px;
+  height: 5px;
+  margin: 20px;
+  // overflow: hidden;
+  line-height: 5px;
+  background-color: rgb(235, 238, 245);
+  border-radius: 10px;
+}
+
+.bar {
+  position: relative;
+  height: 100%;
+  text-align: center;
+  background-color: #007bff;
+  transition: width 0.3s ease;
+}
+.text {
+  color: #ffffff;
+  font-weight: bold;
+  // 进度条内部文本样式
+  font-size: 14px;
+}
+
+.circle {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+}
+
+.bgCircle {
+  fill: none;
+  // stroke-dasharray: 73.8274px, 295.31px;
+  stroke-dashoffset: 0px;
+  stroke-width: 3px;
+}
+
+.fillCircle {
+  animation: fillAnimation 1s ease-in-out forwards;
+  fill: none;
+  stroke-width: 3px;
+  stroke-linecap: round;
+}
+
+@keyframes fillAnimation {
+  from {
+    stroke-dasharray: 0 100;
+  }
+  to {
+    stroke-dasharray: 100 100;
+  }
+}
+.circleprogress {
+  display: inline-block;
+  margin: 20px;
+}

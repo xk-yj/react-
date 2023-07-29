@@ -1,10 +1,10 @@
 ---
 title: InputNumber计数器
 nav:
-  title: 通用
+  title: Form 表单组件
   path: /component
 group:
-  path: /component
+  path: /form
 ---
 
 # InputNumber 计数器

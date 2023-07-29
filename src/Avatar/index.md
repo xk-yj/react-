@@ -1,10 +1,11 @@
 ---
-title: Avatar组件
+title: Avatar 头像
 nav:
-  title: 通用
+  title: Data 数据展示
   path: /component
+  apiKey: Avatar
 group:
-  path: /component
+  path: /data
 ---
 
 # Avatar 头像

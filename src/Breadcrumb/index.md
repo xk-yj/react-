@@ -1,10 +1,10 @@
 ---
 title: Breadcrumb面包屑
 nav:
-  title: 通用
+  title: Navigation 导航
   path: /component
 group:
-  path: /component
+  path: /navigation
 ---
 
 # Breadcrumb 面包屑

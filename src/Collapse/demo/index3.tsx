@@ -44,5 +44,5 @@ export default function CollapseDemo1() {
       ),
     },
   ];
-  return <Tree items={item} type={'ghost'} height={50}></Tree>;
+  return <Tree items={item} type={'ghost'} height={80}></Tree>;
 }

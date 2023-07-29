@@ -1,10 +1,10 @@
 ---
 title: MessageBox 弹框
 nav:
-  title: 通用
+  title: Feedback 反馈组件
   path: /component
 group:
-  path: /component
+  path: /feedback
 ---
 
 # MessageBox 弹框
